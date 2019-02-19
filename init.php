@@ -310,7 +310,7 @@ class Feediron extends Plugin implements IHandler
         break;
     }
 
-    $tags = array_filter($tags);
+    $tags = $tags;
 
     if(!$tags){
       Feediron_Logger::get()->log(Feediron_Logger::LOG_TTRSS, "No tags saved");
